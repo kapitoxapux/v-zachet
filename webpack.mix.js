@@ -11,6 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/geo_guide.js', 'public/js')
-   .sass('resources/sass/main.sass', 'public/css');
+//mix.js('resources/js/geo_guide.js', 'public/js');
+//mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app_main.js', 'public/js')
+   .sass('resources/sass/main.sass', 'public/css')
+   .sass('resources/sass/main_1.sass', 'public/css');
    //.sass('resources/sass/style.sass', 'public/css');

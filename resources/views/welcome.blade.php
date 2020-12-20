@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
+@section('styles')
+    <style>
+            /* html, body {
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -60,12 +51,14 @@
 
             .m-b-md {
                 margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+            } */
+            
+    </style>
+@endsection
+
+@section('content')
+    <main>
+            <!-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -77,24 +70,59 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif -->
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+        <section class="v-container fluid banners-section">
+            <!-- <div class="v-container"> -->
+                <v-row no-gutters class="justify-content-center">
+                    <v-col cols="11">
+                        <v-row :align="alignment" :justify="justify" class="" no-gutters>
+                            <v-col cols="8" class="d-flex justify-content-center">
+                                <div class="d-flex flex-column align-items-center col-12 col-md-10 col-lg-10 p-0">
+                                    <div class="banner-slogan">
+                                        <h2 class="m-0">Лучший интернет-сервис<br>помощи студентам</h2>
+                                    </div>
+                                    <div class="d-none d-md-flex d-lg-flex justify-content-between">
+                                        <button-component icon-in="mdi-book-multiple" text-class="in_left" color="green">Заказать работу</button-component>
+                                        <button-component icon-in="mdi-pencil" text-class="in_right" style="margin: 0 0 0 25px">Стать автором</button-component>
+                                    </div> 
+                                </div>    
+                            </v-col>
+                            <v-col cols="4" class="d-flex justify-content-center">
+                                <!-- <div class="d-flex justify-content-center"> -->
+                                    <img class="img-stuff py-5" src="/images/stuff.png" alt="stuff">
+                                <!-- </div> -->
+                            </v-col>
+                        </v-row>
+                        <div class="d-flex flex-column d-md-none d-lg-none justify-content-between mobile-main-buttons">
+                            <button-component icon-in="mdi-book-multiple" text-class="in_left" color="green">Заказать работу</button-component>
+                            <button-component icon-in="mdi-pencil" text-class="in_right">Стать автором</button-component>
+                        </div>
+                    </v-col>
+                </v-row>
+            <!-- </div> -->
+        </section>
+        <section class="helpers-slider">
+            
+        </section>
+        <section class="seo-section">
+            
+        </section>
+        <section class="instruction-section">
+            
+        </section>
+        <section class="seo-section">
+            
+        </section>
+        <section class="body-section">
+            
+        </section>
+    </main>
+    <footer>
+    
+    </footer>
+@endsection
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+@section('scripts')
+    <script type="text/javascript" src="/js/app_main.js"></script>
+@endsection

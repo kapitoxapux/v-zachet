@@ -15,10 +15,26 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/* Route::get('/', function () {
-    return view('guide');
-}); */
+Route::get('404', function () {
+    return view('layouts.404');
+});
+
+Route::get('/main', function () {
+    return view('main');
+})->middleware('auth');
+
+Route::get('/home', function () {
+    return view('home');
+})->middleware('auth');
+
+Route::get('/cabinet', function () {
+    return view('cabinet');
+})->middleware('auth');
 
 Auth::routes();
+
+Route::get('/register', function () {
+    return redirect('/');
+});
 
 //Route::get('/home', 'HomeController@index')->name('home');
