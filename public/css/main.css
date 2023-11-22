@@ -1,0 +1,94 @@
+.app-name {
+  padding-right: 25px;
+}
+
+.app-name h1 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.banner-slogan {
+  padding: 2rem 0;
+}
+
+.navbarSupportedContent>ul.navbar-nav:first-child {
+  width: 100%;
+}
+
+.logo-header {
+  padding: 1rem 0;
+}
+
+.v-application .banners-section .v-btn.banner_button {
+  padding: 1.5rem 2.25rem;
+  border: none;
+}
+
+.v-application .banners-section .v-btn.banner_button.in_left {
+  background-color: #bddb00;
+}
+
+.v-application .banners-section .v-btn.banner_button.in_right {
+  background-color: #ffe32e;
+}
+
+.banners-section {
+  background-color: #88d8d8;
+}
+
+.banners-section>div {
+  /*display: grid;
+  grid-template-columns: 1.25fr .75fr;*/
+}
+
+.banners-section h2 {
+  color: white;
+  line-height: 3rem;
+}
+
+.button_banner_1,.button_banner_2 {
+  padding: 25px 40px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 767px)
+{
+
+  .mobile-nav-row {
+    padding: .5rem 0;
+  }
+
+  .mobile-nav-row .navbar-nav {
+    min-width: 120px;
+  }
+
+  .mobile-nav-row .navbar-brand {
+    padding-left: 10px;
+  }
+
+  .banners-section h2 {
+      line-height: 2rem;
+      font-size: 1.1rem;
+  }
+
+  .logo-header {
+    padding: 0;
+    width: 50%;
+  }
+
+  .banner-slogan {
+    padding: 1rem 0;
+  }
+
+  .img-stuff {
+    width: 100%;
+  }
+
+  .v-application .banners-section .v-btn.banner_button {
+    min-width: 250px;
+  }
+  
+  .mobile-main-buttons>div {
+    padding: 0 0 1rem 0;
+  }
+}

@@ -1,0 +1,141 @@
+.footer-left-aside,.footer-content,.consultant,.header-content-block-1,.header-content-block-2,.header-menu,.time,.time-block,.time-pos,.avatar-block,.main-content-block-1,.main-content-block-2,.avatar-status,.avatar-name
+    display: flex
+
+.main
+    aside,section
+        border: 1px solid red
+
+.header-content,.header-right-aside,.header-left-aside,.footer-content,.footer-right-aside
+    border: 1px solid red
+
+#grid
+    display: grid
+    grid-template-rows: 8vh 84vh 8vh
+    grid-template-areas: "header" "main" "footer"
+    header
+        grid-area: header
+        grid-template-columns: 1fr 8fr 1fr
+        grid-template-rows: inherit
+        display: grid
+    main
+        grid-area: main
+        grid-template-columns: 1fr 8fr 1fr
+        display: grid
+        background-color: #eef1f3
+    footer
+        grid-area: footer
+        grid-template-columns: 1fr 8fr 1fr
+        display: grid
+
+.header-content
+    display: grid
+    justify-content: space-between
+    grid-template-areas: "hd-bl-1 hd-bl-2"
+    grid-template-columns: 7fr 2fr
+
+.header-content-block-1
+    grid-area: hd-bl-1
+
+.header-content-block-2
+    grid-area: hd-bl-2
+    justify-content: center
+    border-left: 1px solid black
+    background-color: #bddb00
+
+.logo-link
+    align-self: center
+
+.header-logo
+    width: 14vw
+
+.header-menu
+    flex-direction: row
+    margin: 0
+    padding: 0
+    list-style-type: none
+    align-self: center
+    li
+        padding: 0 10px
+        border: 2px solid transparent
+        a
+            text-decoration: none
+            border-bottom: 2px solid #bddb00
+            color: black
+
+.main-content
+    display: grid
+    justify-content: space-between
+    grid-template-areas: "mn-con-1 mn-con-2"
+    grid-template-columns: 7fr 2fr
+
+.main-content-block-1
+    grid-area: mn-con-1
+
+.main-content-block-2
+    grid-area: mn-con-2
+    justify-content: center
+    border-left: 1px solid black
+
+.footer-left-aside
+    border: 1px solid red
+    margin: 0 auto
+    align-self: center
+    justify-content: center
+
+.footer
+    background-color: #31363a
+
+.footer-logo
+    height: 50px
+
+.footer-content
+    align-self: center
+    flex-direction: row
+    justify-content: space-around
+    p
+        margin: 0
+        padding: 0
+        color: white
+    a
+        margin: 0
+        padding: 0
+        color: white
+
+.k_oplate
+    align-self: center
+    span
+        color: white
+
+.consultant
+    align-items: center
+    height: 100%
+    a
+        word-wrap: break-word
+        width: 1px
+        display: block
+        padding: 20px 20px 20px 10px
+        background-color: #bddb00
+        color: white
+        text-decoration: none
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
+        
+.time-block
+    align-items: center
+    img
+        width: 40px
+        height: 40px
+    div
+        padding-left: 20px
+
+.avatar-block
+    align-items: center
+    div
+        padding-left: 20px
+
+.avatar-picture
+    width: 40px
+    height: 40px
+
+.avatar-name,.avatar-status
+    color: white
